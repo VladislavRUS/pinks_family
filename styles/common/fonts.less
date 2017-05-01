@@ -1,0 +1,47 @@
+@font-family: Helvetica, Arial, sans-serif;
+
+.font-face(@file-name, @font-family, @font-weight: 400, @font-style: normal) {
+  @font-face {
+    font-family: "@{font-family}";
+    src: url("../fonts/@{file-name}.ttf"),
+    url("../fonts/@{file-name}.ttf");
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+.font-face(LibreFranklin-Regular, LibreFranklin, 400);
+.font-face(LibreFranklin-Medium, LibreFranklin, 500);
+.font-face(LibreFranklin-Bold, LibreFranklin, 700);
+.font-face(LibreFranklin-ExtraBold, LibreFranklin, 800);
+.font-face(LibreFranklin-Black, LibreFranklin, 900);
+
+.font-regular() {
+  font-family: LibreFranklin, @font-family;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-medium() {
+  font-family: LibreFranklin, @font-family;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-bold() {
+  font-family: LibreFranklin, @font-family;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-extra-bold() {
+  font-family: LibreFranklin, @font-family;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-black() {
+  font-family: LibreFranklin, @font-family;
+  font-weight: 900;
+  font-style: normal;
+}

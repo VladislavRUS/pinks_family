@@ -1,0 +1,89 @@
+.subheader {
+  background: url("../../../images/woman_spa.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  height: 800px;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    padding: 20px 0 40px 0;
+    .font-bold;
+    color: #2b2a28;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    margin-top: -60px;
+    margin-left: -100px;
+    flex-basis: 40%;
+
+    &-content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    flex-basis: 60%;
+    padding-left: 40px;
+
+    &-title {
+      text-transform: uppercase;
+      .font-black;
+      font-size: 140px;
+      line-height: 140px;
+    }
+
+    &-info {
+      padding: 15px 25px;
+      font-size: 50px;
+      .font-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+
+      &-item {
+        position: relative;
+        padding: 10px 0 10px 60px;
+        cursor: pointer;
+        letter-spacing: -0.01em;
+
+        &:hover {
+          color: #333;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 15px;
+          width: 35px;
+          height: 35px;
+          border: 3px solid black;
+          left: 0;
+          border-radius: 10%;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subheader__img {
+    display: none;
+  }
+}

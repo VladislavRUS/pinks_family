@@ -1,98 +1,251 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			padding-top: 5em;
-		}
-
-		table {
-			border-collapse: collapse;
-			border-spacing: 0;
-			border: 4px solid grey;
-		}
-
-		td {
-			border-left: 4px solid white;
-			border-top: 4px solid white;
-			border-right: 4px solid #8e8e8e;
-			border-bottom: 4px solid #8e8e8e;
-			width: 20px;
-			height: 20px;
-			background-color: #AAAAAA;
-			border-style: outset;
-		}
-
-		#field {
-			margin: 0 auto;
-			width: 300px;
-		}
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="styles/main.min.css" rel="stylesheet">
 </head>
 <body>
-<div id="field">
-	
+<div class="container">
+    <div class="header">
+        <div class="header__for">
+            Для мужчин <br> женщин <br> и детей
+        </div>
+
+        <div class="header__title">
+            pink's family
+        </div>
+
+        <div class="header__bottom">
+            by greenwich park
+        </div>
+    </div>
+
+    <div class="subheader">
+        <div class="subheader__title">
+            сеть семейных спа
+        </div>
+
+        <div class="subheader__row">
+            <div class="subheader__img">
+                <!--<img class="subheader__img-content" src="images/woman_spa.png">-->
+            </div>
+
+            <div class="subheader__content">
+                <div class="subheader__content-title">
+                    every <br>
+                    body is <br>
+                    ready
+                </div>
+                <div class="subheader__content-info">
+                    <div class="subheader__content-info-item">
+                        три часа релакса
+                    </div>
+                    <div class="subheader__content-info-item">
+                        сауны бассейн
+                    </div>
+                    <div class="subheader__content-info-item">
+                        все spa включены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promo">
+        <div class="promo__title">
+            приглашаем приобрести трех-часовой спа-тур:
+        </div>
+
+        <div class="promo__item">
+            <div class="promo__item-hour">
+                <span class="promo__item-hour-text">
+                    первый час
+                </span>
+            </div>
+            <div class="promo__item-value">
+                * аква-термо зона * соляной грот <br>
+                * финская сауна <br>
+                * бассейн с гидромассажем * купель
+            </div>
+        </div>
+        <div class="promo__item">
+            <div class="promo__item-hour">
+                <span class="promo__item-hour-text">
+                    второй час
+                </span>
+            </div>
+            <div class="promo__item-value">
+                * spa-зона * пилинг ног рыбками Гарра Руфа <br>
+                * массаж стоп с маслом <br>
+                * псаммотерапия - spa теплым песком <br>
+                * стоунтерпаия * аппаратные процедуры
+            </div>
+        </div>
+        <div class="promo__item">
+            <div class="promo__item-hour">
+                <span class="promo__item-hour-text">
+                    третий час
+                </span>
+            </div>
+            <div class="promo__item-value">
+                * арома-зал * фито-чаепитие *арома-релакс <br>
+                * sleeping-терапия
+            </div>
+        </div>
+    </div>
+
+    <div class="cost">
+        <div class="cost__header">
+            стоимость spa-тура, без учета скидки: 1100 руб
+        </div>
+        <div class="cost__subheader">
+            онлайн-продажа любого сеанса закрывается за 2 часа до начала
+        </div>
+        <div class="cost__easy">
+            экономить просто
+        </div>
+    </div>
+
+    <div class="date">
+
+        <div class="date__title">
+            выберите дату и время сеанса <br>
+            приобретайте купон со скидкой 50%
+        </div>
+
+        <div class="date__calendar"></div>
+
+    </div>
+
+    <div class="discount">
+        <div class="discount__header">
+            <div class="discount__header-row">
+                <div class="discount__header-row-item _w150">
+                    начало сеанса
+                </div>
+                <div class="discount__header-row-item _w150">
+                    скидка
+                </div>
+                <div class="discount__header-row-item _w150">
+                    цена
+                </div>
+                <div class="discount__header-row-item _w150">
+                    осталось мест
+                </div>
+            </div>
+        </div>
+
+        <div class="discount__content mCustomScrollbar">
+            <div class="discount__content-row">
+                <div class="discount__content-row-item">
+                    10.00
+                </div>
+                <div class="discount__content-row-item">
+                    50%
+                </div>
+                <div class="discount__content-row-item">
+                    550
+                </div>
+                <div class="discount__content-row-item">
+                    3
+                </div>
+            </div>
+
+            <div class="discount__content-row">
+                <div class="discount__content-row-item">
+                    10.00
+                </div>
+                <div class="discount__content-row-item">
+                    50%
+                </div>
+                <div class="discount__content-row-item">
+                    550
+                </div>
+                <div class="discount__content-row-item">
+                    3
+                </div>
+            </div>
+
+            <div class="discount__content-row">
+                <div class="discount__content-row-item">
+                    10.00
+                </div>
+                <div class="discount__content-row-item">
+                    50%
+                </div>
+                <div class="discount__content-row-item">
+                    550
+                </div>
+                <div class="discount__content-row-item">
+                    3
+                </div>
+            </div>
+
+            <div class="discount__content-row">
+                <div class="discount__content-row-item">
+                    10.00
+                </div>
+                <div class="discount__content-row-item">
+                    50%
+                </div>
+                <div class="discount__content-row-item">
+                    550
+                </div>
+                <div class="discount__content-row-item">
+                    3
+                </div>
+            </div>
+
+            <div class="discount__content-row">
+                <div class="discount__content-row-item">
+                    10.00
+                </div>
+                <div class="discount__content-row-item">
+                    50%
+                </div>
+                <div class="discount__content-row-item">
+                    550
+                </div>
+                <div class="discount__content-row-item">
+                    3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra">
+        <div class="extra__title">
+            покупайте дополнительные процедуры <br>
+            к вашему spa-туру по уникальной цене
+        </div>
+        <div class="extra__subtitle">
+            После покупки Вы можете связаться с администратором <br>
+            по тел: 888-888, мы привяжем выбранную процедуру <br>
+            к вермени сеанса Вашего spa-тура
+        </div>
+
+        <div class="extra__offers">
+            <div class="extra__offers-item">
+                <div class="extra__offers-item-title">
+
+                </div>
+                <div class="extra__offers-item-img">
+
+                </div>
+                <div class="extra__offers-item-price">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+
+    </div>
+
 </div>
 
-<script>
-	var N = 10;
-	var p = 0.3;
-	var init = false;
-
-	function createMatrix() {
-		var matrix = [];
-		for (var i = 0; i < N; i++) {
-			matrix[i] = new Array();
-		}
-
-		for (var i = 0; i < N; i++) {
-			for (var j = 0; j < N; j++) {
-				matrix[i][j] = Math.random() > p ? 1 : 0;
-			}
-		}
-	}
-
-	function processMatrix(matrix) {
-		var table = document.createElement('table');
-
-		for (var i = 0; i < N; i++) {
-			var tr = document.createElement('tr');
-
-			for (var j = 0; j < N; j++) {
-				var td = document.createElement('td');
-				
-				td.setAttribute('i', i);
-				td.setAttribute('j', j);
-
-				tr.appendChild(td);
-
-				td.click = onClick;
-			}
-
-			table.appendChild(tr);
-		}
-
-		document.getElementById('field').appendChild(table);
-	}
-
-	function start() {
-		init = false;
-		var m = createMatrix();
-		processMatrix(m);
-	}
-
-	function onClick() {
-
-	}
-
-	start();
-
-</script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

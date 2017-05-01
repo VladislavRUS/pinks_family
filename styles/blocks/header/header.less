@@ -1,5 +1,64 @@
 .header {
-	width: 100px;
-	height: 100px;
-	background-color: blue;
+
+	&__for {
+		position: relative;
+		margin-left: 75%;
+		padding: 5px;
+		width: 130px;
+		height: 80px;
+		white-space: nowrap;
+		font-size: 20px;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: black;
+		overflow: hidden;
+		.font-bold;
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 40px;
+			height: 100px;
+			background-color: rgb(234, 219, 43);
+			transform: rotate(80deg) translateX(60px);
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 40px;
+			height: 100px;
+			background-color: rgb(234, 219, 43);
+			transform: rotate(-80deg) translateX(-41px) translateY(110px);
+		}
+	}
+
+	&__title {
+		margin-top: 10px;
+		text-align: center;
+		.font-bold;
+		letter-spacing: 0.05em;
+		font-size: 120px;
+		color: black;
+	}
+
+	&__bottom {
+		min-height: 40px;
+		background-color: #5B5B5B;
+		text-align: center;
+		line-height: 40px;
+		.font-medium;
+		letter-spacing: 0.55em;
+		font-size: 26px;
+		color: white;
+		text-transform: uppercase;
+	}
 }

@@ -5,8 +5,18 @@ var concat = require('gulp-concat'),
 	gulp = require('gulp'),
 	bsync = require('browser-sync');
 
+var jsSource = [
+	'node_modules/jquery/dist/jquery.min.js',
+	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'
+];
+
+var styleSources = [
+	'./styles/main.less',
+	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'
+];
+
 gulp.task('less', function() {
-	gulp.src('./styles/main.less')
+	gulp.src(styleSources)
 	.pipe(less())
 	.pipe(concat('main.css'))
 	.pipe(minifyCSS())
@@ -15,10 +25,18 @@ gulp.task('less', function() {
 	.pipe(bsync.stream());
 });
 
+gulp.task('js', function() {
+	gulp.src(jsSource)
+		.pipe(concat('main.js'))
+		.pipe(gulp.dest('./scripts'));
+});
+
 gulp.task('serve', function() {
 	bsync.init({
 		server: './'
 	});
 
-	gulp.watch('./styles/blocks/**/*.less', ['less']);
-})
+	gulp.watch('./styles/**/**/*.less', ['less']);
+	gulp.watch('./styles/main.less', ['less']);
+	gulp.watch('./*.html', bsync.reload);
+});
