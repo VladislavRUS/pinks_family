@@ -7,20 +7,20 @@ var concat = require('gulp-concat'),
 
 var jsSource = [
 	'node_modules/jquery/dist/jquery.min.js',
-	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'
+	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js',
+	'node_modules/bootstrap/dist/js/bootstrap.min.js'
 ];
 
 var styleSources = [
-	'./styles/main.less',
-	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'
+	'node_modules/bootstrap/dist/css/bootstrap.min.css',
+	'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css',
+	'./styles/main.less'
 ];
 
 gulp.task('less', function() {
 	gulp.src(styleSources)
 	.pipe(less())
 	.pipe(concat('main.css'))
-	.pipe(minifyCSS())
-	.pipe(rename({suffix:'.min' }))
 	.pipe(gulp.dest('./styles/'))
 	.pipe(bsync.stream());
 });
