@@ -10464,11 +10464,11 @@ table {
   color: white;
 }
 .extra {
+  padding: 40px;
   width: 100%;
   background-color: #727270;
 }
 .extra__title {
-  margin-top: 20px;
   padding: 10px;
   color: #eadb2b;
   font-family: LibreFranklin, Helvetica, Arial, sans-serif;
@@ -10525,6 +10525,26 @@ table {
 .extra__offers-item-price-number._right {
   text-decoration: line-through;
 }
+.extra__watch {
+  color: #eadb2b;
+  font-family: LibreFranklin, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #2b2a28;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+.extra__watch:hover {
+  background-color: #141311;
+}
+.extra__watch-title {
+  font-size: 40px;
+}
+.extra__watch-subtitle {
+  font-size: 20px;
+}
 @media (max-width: 992px) {
   .extra__offers-item-title {
     font-size: 20px;
@@ -10544,11 +10564,15 @@ table {
     font-size: 30px;
   }
 }
+.footer {
+  min-height: 100px;
+  background-color: #5B5B5B;
+}
 .header__for {
   position: relative;
   margin-left: 75%;
   padding: 5px;
-  width: 130px;
+  width: 135px;
   height: 80px;
   white-space: nowrap;
   font-size: 20px;
@@ -10568,10 +10592,10 @@ table {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 40px;
+  width: 70px;
   height: 100px;
   background-color: #eadb2b;
-  transform: rotate(80deg) translateX(60px);
+  transform: rotate(80deg) translateX(75px) translateY(20px);
 }
 .header__for:before {
   content: "";
@@ -10579,10 +10603,10 @@ table {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 40px;
+  width: 60px;
   height: 100px;
   background-color: #eadb2b;
-  transform: rotate(-80deg) translateX(-41px) translateY(110px);
+  transform: rotate(-80deg) translateX(-56px) translateY(95px);
 }
 .header__title {
   margin-top: 10px;
@@ -10749,4 +10773,7 @@ table {
   .subheader__img {
     display: none;
   }
+}
+.slider {
+  min-height: 400px;
 }
